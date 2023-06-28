@@ -1,0 +1,212 @@
+#body{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    background-color: #141414;
+    overflow-y: auto;
+}
+#center-body{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#center-body img{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+#center-body input{
+    width: 90vw;
+    max-width: 600px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.go-back{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.go-back img{
+    width: 100%;
+
+    height: 100%;
+}
+*{
+    font-family: 'Poppins';
+}
+#result-section{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+}
+
+.sub-section .section-movie .movie-container{
+    opacity: 0.9;
+    height: 300px;
+    width: 240px;
+    transition: 500ms;
+    position: relative;
+    margin: 5px;
+    
+}
+.sub-section .section-movie .movie-container:hover{
+    transition: 500ms;
+    opacity: 1;
+
+}
+.sub-section .section-movie .movie-container:hover > .movie-title{
+    transition: 500ms;
+    opacity: 1;
+}
+
+.sub-section .section-movie .movie-container .movie-head{
+    position: absolute;
+    top: 0;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    justify-content: space-between;
+    background: linear-gradient(0deg,transparent,#141414);
+    padding-bottom: 30px;
+    cursor: pointer;
+
+}
+.sub-section .section-movie .movie-container .movie-head .movie-views{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-section .section-movie .movie-container .movie-head .movie-views img{
+    margin-right: 5px;
+    margin-left: 5px;
+    filter: invert();
+}
+.sub-section .section-movie .movie-container .movie-head .movie-type{
+    width: fit-content;
+    height: fit-content;
+    background: black;
+    padding: 2px 8px;
+    border-radius: 2px;
+    transition: 500ms;  
+}
+.sub-section .section-movie .movie-container:hover > .movie-head .movie-type{
+    background:transparent;
+    transition: 500ms;  
+}
+
+.sub-section .section-movie .movie-container .movie-title{
+    position: absolute;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.856);
+    background:linear-gradient(0deg,#141414c4,#14141400);
+    height: fit-content;
+    width: calc(100% - 10px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    transition: 500ms;
+    padding-top: 20px;
+    cursor: pointer;
+}
+*{
+    font-family: 'Poppins';
+}
+
+/* .sub-section .section-movie .movie-container{
+
+} */
+.sub-section .section-movie .movie-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 10px;
+
+}
+
+.sub-section .section-movie .movie-container img:hover{
+    border-radius: 0px;
+    transition: 500ms;
+}
+
+#result-section .sub-section{
+    width: 100%;
+    height: fit-content;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    
+    padding-top: 10px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+#result-section .sub-section .section-title{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#result-section .section-movie{
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.btn-search{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: #ed1d3d;
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+}
+#center-body label{
+    color: white;
+    font-size: 10px;
+    margin-top: 5px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: #777;
+}
+::-webkit-scrollbar-thumb{
+    background: -webkit-linear-gradient(transparent,#e33351);
+    background: linear-gradient(transparent,#e33351);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+   background: -webkit-linear-gradient(transparent,#00c6ff);
+   background: linear-gradient(transparent,#00c6ff); 
+}
